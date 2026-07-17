@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cupo confirmado · Los 6 Secretos para Subir a Challenger</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700;800&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#06090F; --surface:#0D1826; --surface2:#122236;
+  --cyan:#3BCAE1; --teal:#0E8CA9; --gold:#C8AA6E;
+  --text:#FFFFFF; --muted:#8FA3B8; --line:#1E3248;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Ubuntu',Arial,sans-serif;line-height:1.55}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+.serif{font-family:'Noto Serif',Georgia,serif}
+.topbar{border-bottom:1px solid var(--line);padding:14px 0;text-align:center}
+.brand{font-weight:700;letter-spacing:2px;font-size:15px}
+.brand span{color:var(--cyan)}
+.hero{padding:44px 0 10px;text-align:center}
+.check{width:58px;height:58px;border-radius:50%;background:var(--cyan);color:#06090F;font-size:30px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 18px}
+h1{font-family:'Noto Serif',Georgia,serif;font-size:clamp(26px,4vw,40px);font-weight:800;margin-bottom:10px}
+.sub{color:var(--muted);font-size:16px;max-width:600px;margin:0 auto}
+.warn{display:inline-block;margin-top:18px;background:var(--surface);border:1px solid var(--gold);color:var(--gold);font-size:13px;letter-spacing:1px;padding:9px 18px;border-radius:2px}
+.countdown{display:flex;gap:14px;justify-content:center;margin:28px 0 8px}
+.cd-box{background:var(--surface);border:1px solid var(--line);border-radius:6px;min-width:78px;padding:12px 10px;text-align:center}
+.cd-box b{display:block;font-size:30px;color:var(--cyan);font-family:'Noto Serif',Georgia,serif}
+.cd-box span{font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase}
+.steps{padding:44px 0 60px}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:26px 24px;margin-bottom:18px;display:grid;grid-template-columns:52px 1fr;gap:18px;align-items:start}
+.s-num{width:44px;height:44px;border-radius:50%;border:2px solid var(--cyan);color:var(--cyan);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px}
+.step h3{font-size:18px;margin-bottom:6px}
+.step p{font-size:14px;color:var(--muted);margin-bottom:10px}
+.video-ph{background:var(--surface2);border:1px dashed var(--gold);border-radius:8px;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:13px;text-align:center;padding:16px;margin-top:6px}
+.mini-btn{display:inline-block;background:transparent;border:1px solid var(--cyan);color:var(--cyan);font-size:13px;font-weight:700;padding:9px 18px;border-radius:4px;text-decoration:none;cursor:pointer;font-family:inherit}
+.mini-btn:hover{background:var(--cyan);color:#06090F}
+.sorien{border-left:3px solid var(--gold);padding-left:14px;margin-top:6px}
+.sorien b{color:var(--gold)}
+.sorien .src{font-size:11px;color:var(--muted);display:block;margin-top:6px}
+.phone-form label{display:block;font-size:12px;letter-spacing:1px;color:var(--muted);margin:10px 0 6px;text-transform:uppercase}
+.phone-form input{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:12px 14px;color:var(--text);font-size:15px;font-family:inherit}
+.phone-form input:focus{outline:none;border-color:var(--cyan)}
+.btn{display:block;width:100%;background:var(--cyan);color:#06090F;border:none;border-radius:4px;padding:14px;font-size:15px;font-weight:700;cursor:pointer;margin-top:14px;font-family:inherit}
+.btn:hover{background:#5CD6E9}
+.done-msg{display:none;margin-top:12px;color:var(--cyan);font-size:14px;font-weight:700}
+footer{border-top:1px solid var(--line);padding:24px 0;text-align:center;font-size:12px;color:var(--muted)}
+@media(max-width:640px){.step{grid-template-columns:1fr}.s-num{margin-bottom:4px}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="brand">TITANS <span>COACHING</span></div></div>
+
+<section class="hero"><div class="wrap">
+  <div class="check">✓</div>
+  <h1 class="serif">Tu cupo esta confirmado, <span id="regName">Invocador</span></h1>
+  <p class="sub">Los 6 Secretos para Subir a Challenger · en vivo con Coach Levi</p>
+  <div class="warn">IMPORTANTE: completa los 5 pasos de abajo. Toma 3 minutos y duplica tus chances de no perderte el vivo.</div>
+  <div class="countdown" id="countdown">
+    <div class="cd-box"><b id="cdD">0</b><span>dias</span></div>
+    <div class="cd-box"><b id="cdH">0</b><span>horas</span></div>
+    <div class="cd-box"><b id="cdM">0</b><span>min</span></div>
+    <div class="cd-box"><b id="cdS">0</b><span>seg</span></div>
+  </div>
+</div></section>
+
+<section class="steps"><div class="wrap">
+
+  <div class="step">
+    <div class="s-num">1</div>
+    <div>
+      <h3>Mira este mensaje de Levi (45 segundos)</h3>
+      <p>Tu entrenador te explica exactamente que vas a recibir en la masterclass y el compromiso que te pide a cambio.</p>
+      <div class="video-ph">VIDEO DE BIENVENIDA DE FRANCISCO<br>[grabar 45-60 seg: saludo, promesa de la masterclass, "hagamos un trato: tu te quedas hasta el final"]</div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="s-num">2</div>
+    <div>
+      <h3>Agrega la masterclass a tu calendario</h3>
+      <p>Los que la agendan asisten el doble. Un clic y queda bloqueado.</p>
+      <a class="mini-btn" href="[LINK_GOOGLE_CALENDAR]" target="_blank" rel="noopener">+ Agregar a Google Calendar</a>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="s-num">3</div>
+    <div>
+      <h3>Busca el correo de confirmacion y marcalo</h3>
+      <p>Acabamos de enviarte el acceso. Si no esta en tu bandeja principal, buscalo en promociones o spam y arrastralo a principal: ahi llegaran los recordatorios y el link del vivo.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="s-num">4</div>
+    <div>
+      <h3>Un anticipo de lo que vas a ver</h3>
+      <p>En la masterclass conoceras el sistema completo detras de resultados como este:</p>
+      <div class="sorien">
+        <b>Sorien: de Diamante a Retador junto a Titans.</b> Carril jungla. Top 1 de LAN y llego a jugar profesional. Mismos equipos random que los tuyos: lo que cambio fue el sistema.
+        <span class="src">Fuente: titanscoaching.cl (VSL y pagina de jungla)</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="s-num">5</div>
+    <div>
+      <h3>Recibe el recordatorio por WhatsApp (recomendado)</h3>
+      <p>El 90% de los que se pierden el vivo es porque no vieron el correo a tiempo. Deja tu WhatsApp y te avisamos 1 hora antes y al empezar. Solo para eso.</p>
+      <form class="phone-form" id="phoneForm">
+        <label for="phone">Tu WhatsApp (con codigo de pais)</label>
+        <input type="tel" id="phone" name="phone" placeholder="+56 9 1234 5678" required>
+        <button type="submit" class="btn">AVISENME POR WHATSAPP</button>
+        <div class="done-msg" id="phoneDone">Listo. Te avisamos 1 hora antes del vivo.</div>
+      </form>
+    </div>
+  </div>
+
+</div></section>
+
+<footer><div class="wrap">Titans Coaching · titanscoaching.cl<br>Pagina de demostracion construida por Zytrom para Titans Coaching</div></footer>
+
+<script>
+// Nombre desde el registro
+try{
+  var n = localStorage.getItem('titans_reg_name');
+  if(n){ document.getElementById('regName').textContent = n; }
+}catch(e){}
+
+// Countdown al evento [PROPUESTA]: proximo tercer jueves de mes, 20:00 America/Santiago (aprox local)
+function nextEvent(){
+  var now = new Date();
+  for(var m=0; m<14; m++){
+    var d = new Date(now.getFullYear(), now.getMonth()+m, 1);
+    var count=0, day=new Date(d);
+    while(true){
+      if(day.getDay()===4){ count++; if(count===3) break; }
+      day.setDate(day.getDate()+1);
+    }
+    day.setHours(20,0,0,0);
+    if(day > now) return day;
+  }
+  return new Date(now.getTime()+7*864e5);
+}
+var target = nextEvent();
+function tick(){
+  var diff = target - new Date();
+  if(diff<0) diff=0;
+  var d=Math.floor(diff/864e5), h=Math.floor(diff%864e5/36e5), mi=Math.floor(diff%36e5/6e4), s=Math.floor(diff%6e4/1e3);
+  document.getElementById('cdD').textContent=d;
+  document.getElementById('cdH').textContent=h;
+  document.getElementById('cdM').textContent=mi;
+  document.getElementById('cdS').textContent=s;
+}
+tick(); setInterval(tick,1000);
+
+document.getElementById('phoneForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  try{ localStorage.setItem('titans_reg_phone', document.getElementById('phone').value); }catch(err){}
+  document.getElementById('phoneDone').style.display='block';
+  this.querySelector('.btn').textContent='WHATSAPP GUARDADO ✓';
+});
+</script>
+</body>
+</html>
