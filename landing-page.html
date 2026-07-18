@@ -21,11 +21,13 @@ body{background:var(--bg);color:var(--text);font-family:'Ubuntu',Arial,sans-seri
 .serif{font-family:'Noto Serif',Georgia,serif}
 .navbar{border-bottom:1px solid var(--line);padding:13px 0;position:sticky;top:0;background:rgba(6,9,15,0.94);backdrop-filter:blur(8px);z-index:50}
 .navbar .wrap{display:flex;justify-content:space-between;align-items:center}
-.brand{font-weight:700;letter-spacing:2px;font-size:15px}
+.brand{font-weight:700;letter-spacing:2px;font-size:15px;display:flex;align-items:center;gap:10px}
+.brand img{height:34px;width:auto}
 .brand span{color:var(--cyan)}
 .nav-cta{background:var(--cyan);color:#06090F;font-size:13px;font-weight:700;padding:9px 18px;border-radius:4px;text-decoration:none}
 .nav-cta:hover{background:#5CD6E9}
-.hero{padding:34px 0 46px;text-align:center}
+.hero{padding:34px 0 46px;text-align:center;background:linear-gradient(rgba(6,9,15,0.72),rgba(6,9,15,0.94) 78%,var(--bg)),url('images/titans/vsl-hero-1920.webp') center 18%/cover no-repeat}
+.glow{color:var(--cyan);text-shadow:0 0 16px rgba(59,202,225,0.8),0 0 44px rgba(59,202,225,0.45)}
 .eyebrow{font-size:12px;letter-spacing:3px;color:var(--cyan);text-transform:uppercase;margin-bottom:12px;font-weight:700}
 h1{font-family:'Noto Serif',Georgia,serif;font-size:clamp(26px,4.2vw,46px);line-height:1.12;font-weight:800;max-width:880px;margin:0 auto 12px}
 h1 .cy{color:var(--cyan)}
@@ -59,7 +61,8 @@ h1 .cy{color:var(--cyan)}
 .pilar p{font-size:14px;color:var(--muted)}
 .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .testi{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:22px 20px;display:flex;flex-direction:column;gap:12px}
-.testi .shot{background:var(--surface2);border:1px dashed var(--gold);border-radius:6px;aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:12px;text-align:center;padding:12px}
+.testi .shot{background:var(--surface2);border:1px solid var(--gold);border-radius:6px;overflow:hidden}
+.testi .shot img{display:block;width:100%;height:auto}
 .testi blockquote{font-size:14px;color:var(--text);font-style:italic}
 .testi .who{font-size:13px;color:var(--gold);font-weight:700}
 .testi .src{font-size:11px;color:var(--muted)}
@@ -91,13 +94,13 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;font-si
 <body>
 
 <nav class="navbar"><div class="wrap">
-  <div class="brand">TITANS <span>COACHING</span></div>
+  <div class="brand"><img src="images/titans/titans-logo.png" alt="Titans Coaching">TITANS <span>COACHING</span></div>
   <a class="nav-cta" href="https://titanscoaching.cl/challenger" target="_blank" rel="noopener">AGENDAR LLAMADA</a>
 </div></nav>
 
 <section class="hero"><div class="wrap">
   <div class="eyebrow">Programa de acompañamiento 1 a 1 · Calificacion requerida</div>
-  <h1 class="serif">Asciende a Maestro, GM o <span class="cy">Challenger</span> en menos de 6 meses</h1>
+  <h1 class="serif">Asciende a Maestro, GM o <span class="glow">CHALLENGER</span> en menos de 6 meses</h1>
   <p class="sub">Sin depender de tu equipo. Con el Metodo TITANS y correccion 1 a 1 sobre TUS partidas, junto a Coach Levi y su equipo.</p>
   <div class="trust-row">
     <div><b>+7.000</b> Invocadores</div>
@@ -159,22 +162,22 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;font-si
   <div class="sec-sub">Todos publicados en titanscoaching.cl. Nada editado, nada inventado.</div>
   <div class="testi-grid">
     <div class="testi">
-      <div class="shot">CAPTURA REAL: Sorien<br>(usar screenshot de la VSL)</div>
+      <div class="shot"><img src="images/titans/testimonio-sorien-retador.png" alt="Sorien: ascendiste a Retador, captura real de su Discord con op.gg" loading="lazy"></div>
       <blockquote>De Diamante a Retador junto a Titans, en el carril de la jungla.</blockquote>
       <div class="who">Sorien · Top 1 de LAN, llego a profesional</div>
       <div class="src">Fuente: VSL y pagina de jungla de titanscoaching.cl</div>
     </div>
     <div class="testi">
-      <div class="shot">CAPTURA REAL: Vaporeon<br>(usar screenshot del Acelerador)</div>
+      <div class="shot"><img src="images/titans/testimonio-vaporeon-retador.jpg" alt="Vaporeon: ascendiste a Retador, captura real de su Discord" loading="lazy"></div>
       <blockquote>"Pude llegar a Challenger con Yone y Akali top, lo mejor es que tambien me sirvieron en Mid y estaba estancado en Maestro"</blockquote>
       <div class="who">Vaporeon · Top Challenger LAS</div>
-      <div class="src">Fuente: pagina del Acelerador de titanscoaching.cl</div>
+      <div class="src">Cita: pagina del Acelerador · captura: VSL de titanscoaching.cl</div>
     </div>
     <div class="testi">
-      <div class="shot">CAPTURA REAL: Light (Brandon)<br>(usar screenshot del Acelerador)</div>
+      <div class="shot"><img src="images/titans/testimonio-light-challenger.jpg" alt="Light: promoted to Challenger, captura real de su Discord" loading="lazy"></div>
       <blockquote>Paso de Diamante 2 a Challenger con el mismo sistema, dejando atras temporadas de estancamiento.</blockquote>
       <div class="who">Light (Brandon) · Challenger</div>
-      <div class="src">Fuente: pagina del Acelerador de titanscoaching.cl</div>
+      <div class="src">Cita: pagina del Acelerador · captura: VSL de titanscoaching.cl</div>
     </div>
   </div>
 </div></section>

@@ -20,10 +20,12 @@ body{background:var(--bg);color:var(--text);font-family:'Ubuntu',Arial,sans-seri
 .serif{font-family:'Noto Serif',Georgia,serif}
 .topbar{border-bottom:1px solid var(--line);padding:14px 0}
 .topbar .wrap{display:flex;justify-content:space-between;align-items:center}
-.brand{font-weight:700;letter-spacing:2px;font-size:15px}
+.brand{font-weight:700;letter-spacing:2px;font-size:15px;display:flex;align-items:center;gap:10px}
+.brand img{height:34px;width:auto}
 .brand span{color:var(--cyan)}
 .live-pill{font-size:11px;letter-spacing:2px;color:var(--gold);border:1px solid var(--gold);padding:5px 12px;border-radius:2px}
-.hero{padding:52px 0 40px;text-align:center}
+.hero{padding:52px 0 40px;text-align:center;background:linear-gradient(rgba(6,9,15,0.78),rgba(6,9,15,0.95) 72%,var(--bg)),url('../images/titans/vsl-hero-1920.webp') center 15%/cover no-repeat}
+.glow{color:var(--cyan);text-shadow:0 0 16px rgba(59,202,225,0.8),0 0 44px rgba(59,202,225,0.45)}
 .eyebrow{font-size:12px;letter-spacing:3px;color:var(--cyan);text-transform:uppercase;margin-bottom:16px;font-weight:700}
 h1{font-family:'Noto Serif',Georgia,serif;font-size:clamp(28px,4.6vw,50px);line-height:1.12;font-weight:800;max-width:900px;margin:0 auto 14px}
 h1 .cy{color:var(--cyan)}
@@ -68,13 +70,13 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;font-si
 <body>
 
 <div class="topbar"><div class="wrap">
-  <div class="brand">TITANS <span>COACHING</span></div>
+  <div class="brand"><img src="../images/titans/titans-logo.png" alt="Titans Coaching">TITANS <span>COACHING</span></div>
   <div class="live-pill">MASTERCLASS EN VIVO · GRATIS</div>
 </div></div>
 
 <section class="hero"><div class="wrap">
   <div class="eyebrow">Para Invocadores estancados que ganan linea y pierden partidas</div>
-  <h1 class="serif">Los 6 Secretos para <span class="cy">Subir a Challenger</span></h1>
+  <h1 class="serif">Los 6 Secretos para <span class="glow">Subir a Challenger</span></h1>
   <p class="sub">Masterclass en vivo con Coach Levi: el Metodo TITANS completo para subir de liga sin depender de tu equipo, incluso con 1 o 2 horas por noche.</p>
   <div class="trust-row">
     <div><b>+7.000</b> Invocadores validaron el sistema</div>

@@ -19,8 +19,11 @@ body{background:var(--bg);color:var(--text);font-family:'Ubuntu',Arial,sans-seri
 .wrap{max-width:860px;margin:0 auto;padding:0 20px}
 .serif{font-family:'Noto Serif',Georgia,serif}
 .topbar{border-bottom:1px solid var(--line);padding:14px 0;text-align:center}
-.brand{font-weight:700;letter-spacing:2px;font-size:15px}
+.brand{font-weight:700;letter-spacing:2px;font-size:15px;display:inline-flex;align-items:center;gap:10px}
+.brand img{height:34px;width:auto}
 .brand span{color:var(--cyan)}
+.sorien-shot{border:1px solid var(--gold);border-radius:6px;overflow:hidden;margin-top:12px;max-width:420px}
+.sorien-shot img{display:block;width:100%;height:auto}
 .hero{padding:44px 0 10px;text-align:center}
 .check{width:58px;height:58px;border-radius:50%;background:var(--cyan);color:#06090F;font-size:30px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 18px}
 h1{font-family:'Noto Serif',Georgia,serif;font-size:clamp(26px,4vw,40px);font-weight:800;margin-bottom:10px}
@@ -53,7 +56,7 @@ footer{border-top:1px solid var(--line);padding:24px 0;text-align:center;font-si
 </head>
 <body>
 
-<div class="topbar"><div class="brand">TITANS <span>COACHING</span></div></div>
+<div class="topbar"><div class="brand"><img src="../../images/titans/titans-logo.png" alt="Titans Coaching">TITANS <span>COACHING</span></div></div>
 
 <section class="hero"><div class="wrap">
   <div class="check">✓</div>
@@ -105,6 +108,7 @@ footer{border-top:1px solid var(--line);padding:24px 0;text-align:center;font-si
         <b>Sorien: de Diamante a Retador junto a Titans.</b> Carril jungla. Top 1 de LAN y llego a jugar profesional. Mismos equipos random que los tuyos: lo que cambio fue el sistema.
         <span class="src">Fuente: titanscoaching.cl (VSL y pagina de jungla)</span>
       </div>
+      <div class="sorien-shot"><img src="../../images/titans/testimonio-sorien-retador.png" alt="Captura real: Sorien ascendiste a Retador" loading="lazy"></div>
     </div>
   </div>
 

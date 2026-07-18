@@ -20,10 +20,12 @@ body{background:var(--bg);color:var(--text);font-family:'Ubuntu',Arial,sans-seri
 .serif{font-family:'Noto Serif',Georgia,serif}
 .topbar{border-bottom:1px solid var(--line);padding:14px 0}
 .topbar .wrap{display:flex;justify-content:space-between;align-items:center}
-.brand{font-weight:700;letter-spacing:2px;font-size:15px}
+.brand{font-weight:700;letter-spacing:2px;font-size:15px;display:flex;align-items:center;gap:10px}
+.brand img{height:34px;width:auto}
 .brand span{color:var(--cyan)}
 .exp-pill{font-size:11px;letter-spacing:2px;color:var(--red);border:1px solid var(--red);padding:5px 12px;border-radius:2px}
-.hero{padding:40px 0 20px;text-align:center}
+.hero{padding:40px 0 20px;text-align:center;background:linear-gradient(rgba(6,9,15,0.82),rgba(6,9,15,0.96) 70%,var(--bg)),url('../images/titans/vsl-hero-1920.webp') center 12%/cover no-repeat}
+.glow{color:var(--cyan);text-shadow:0 0 16px rgba(59,202,225,0.8),0 0 44px rgba(59,202,225,0.45)}
 h1{font-family:'Noto Serif',Georgia,serif;font-size:clamp(24px,3.8vw,38px);font-weight:800;margin-bottom:10px}
 h1 .cy{color:var(--cyan)}
 .sub{color:var(--muted);font-size:15px;max-width:640px;margin:0 auto 22px}
@@ -54,12 +56,12 @@ footer{border-top:1px solid var(--line);padding:24px 0;text-align:center;font-si
 <body>
 
 <div class="topbar"><div class="wrap">
-  <div class="brand">TITANS <span>COACHING</span></div>
+  <div class="brand"><img src="../images/titans/titans-logo.png" alt="Titans Coaching">TITANS <span>COACHING</span></div>
   <div class="exp-pill">REPLAY · DISPONIBLE 48 HORAS</div>
 </div></div>
 
 <section class="hero"><div class="wrap">
-  <h1 class="serif">El replay de <span class="cy">Los 6 Secretos</span> ya esta aqui</h1>
+  <h1 class="serif">El replay de <span class="glow">Los 6 Secretos</span> ya esta aqui</h1>
   <p class="sub">Te perdiste el vivo, pero aun no pierdes el sistema. Este replay se borra cuando el contador llegue a cero. Sin extensiones: lo dijimos y lo cumplimos.</p>
   <div class="cd-label">El replay se borra en</div>
   <div class="countdown">
